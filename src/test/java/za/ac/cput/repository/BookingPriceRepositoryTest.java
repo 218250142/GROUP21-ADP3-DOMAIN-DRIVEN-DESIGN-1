@@ -23,7 +23,7 @@ class BookingPriceRepositoryTest {
 
     //Test to Create
     @Test
-    public void booking_create() {
+    public void a_create() {
         BookingPrice created= bpRepository.create(bookingPrice);
         assertEquals(bookingPrice.getBookingId(),created.getBookingId());
         System.out.println("Create:" + created);
@@ -31,7 +31,7 @@ class BookingPriceRepositoryTest {
 
     //Test to Read
     @Test
-    public void booking_read() {
+    public void b_read() {
         BookingPrice read = bpRepository.read(bookingPrice.getBookingId());
         assertNotNull(read);
         System.out.println("Read:" +read);
@@ -39,7 +39,7 @@ class BookingPriceRepositoryTest {
 
     //Test to Update
     @Test
-    public void booking_update() {
+    public void c_update() {
         BookingPrice updated= new BookingPrice.Builder().copy(bookingPrice)
                 .setDeposit_price(600)
                 .build();
@@ -50,7 +50,7 @@ class BookingPriceRepositoryTest {
 
     //Test to Delete
     @Test
-    public void booking_delete() {
+    public void d_delete() {
         boolean success=bpRepository.delete(bookingPrice.getBookingId());
         assertTrue(success);
         System.out.println("It has been deleted: " + true);
@@ -60,7 +60,7 @@ class BookingPriceRepositoryTest {
 
     //Test to Get all
     @Test
-    public void booking_getAll() {
+    public void e_getAll() {
         System.out.println("Showing all:");
         System.out.println(bpRepository.getAll());
     }
