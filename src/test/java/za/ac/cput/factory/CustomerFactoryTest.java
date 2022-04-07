@@ -4,7 +4,10 @@ import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.Customer;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/*Warren Jaftha(Leader) -219005303
+CustomerFactoryTest.java
+27/03/2022
+ */
 class CustomerFactoryTest {
     @Test
     void createCustomer()
