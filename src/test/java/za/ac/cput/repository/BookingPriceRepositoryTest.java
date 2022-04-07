@@ -2,7 +2,7 @@ package za.ac.cput.repository;
 
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.TestMethodOrder;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.BookingPrice;
 import za.ac.cput.factory.BookingPriceFactory;
 
