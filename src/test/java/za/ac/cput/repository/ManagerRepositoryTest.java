@@ -23,7 +23,7 @@ class ManagerRepositoryTest {
 
     //Test to Create
     @Test
-    void manager_create() {
+    void a_create() {
         Manager created= managerRepository.create(manager);
         assertEquals(manager.getManagerId(),created.getManagerId());
         System.out.println("Create:" + created);
@@ -31,7 +31,7 @@ class ManagerRepositoryTest {
 
     //Test to Read
     @Test
-    void manager_read() {
+    void b_read() {
         Manager read = managerRepository.read(manager.getManagerId());
         assertNotNull(read);
         System.out.println("Read:" +read);
@@ -39,7 +39,7 @@ class ManagerRepositoryTest {
 
     //Test to Update
     @Test
-    void manager_update() {
+    void c_update() {
         Manager updated= new Manager.Builder().copy(manager).setFirstName("Nawaaz")
                 .setLastName("Amien")
                 .setAddress("8 Rockhill Way, Retreat")
@@ -51,7 +51,7 @@ class ManagerRepositoryTest {
 
     //Test to Delete
     @Test
-    void manager_delete() {
+    void d_delete() {
         boolean success=managerRepository.delete(manager.getManagerId());
         assertTrue(success);
         System.out.println("Deleted: " + true);
@@ -60,7 +60,7 @@ class ManagerRepositoryTest {
 
     //Test to Get all
     @Test
-    void manager_getAll() {
+    void e_getAll() {
         System.out.println("Show all:");
         System.out.println(managerRepository.getAll());
     }

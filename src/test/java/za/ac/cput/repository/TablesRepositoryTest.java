@@ -40,7 +40,7 @@ class TablesRepositoryTest {
                 .setReservedTable("Table15")
                 .setNumSeats(3)
                 .build();
-        assertTrue(true, (Supplier<String>) repository.update(updated));
+        assertTrue(true, String.valueOf(( repository.update(updated))));
         System.out.println("Updated: "+updated);
     }
 
