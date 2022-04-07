@@ -76,23 +76,5 @@ public class ChefRepository implements IChefRepository {
     }
 
 
-    @Override
-    public void create() {
 
-    }
-
-    @Override
-    public void update() {
-
-    }
-
-    @Override
-    public void read() {
-
-    }
-
-    @Override
-    public boolean delete() {
-        return false;
-    }
 }
