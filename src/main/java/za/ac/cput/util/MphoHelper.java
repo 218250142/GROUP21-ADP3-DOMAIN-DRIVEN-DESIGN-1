@@ -3,12 +3,13 @@ package za.ac.cput.util;
 Mpho Sefoloko
 218336322
 group 21
+March
  */
 import java.util.UUID;
 
 public class MphoHelper {
 
-    public static String itemId(){return UUID.randomUUID().toString();}
+    public static int itemId(){return UUID.randomUUID().hashCode();}
 
 
     public static String totalLimit(){return UUID.randomUUID().toString();}

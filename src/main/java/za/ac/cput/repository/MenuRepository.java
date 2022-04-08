@@ -3,6 +3,7 @@ package za.ac.cput.repository;
 Mpho Sefoloko
 218336322
 group 21
+March
  */
 import za.ac.cput.entity.Menu;
 import java.util.HashSet;
@@ -32,6 +33,12 @@ public class MenuRepository implements IMenuRepository {
             return null;
         return menu;
     }
+
+    @Override
+    public Menu read(Integer integer) {
+        return null;
+    }
+
     public Menu read(int itemId) {
     Menu menu = menuDB.stream()
             .filter(e -> e.getItemId()==(itemId))
@@ -49,6 +56,11 @@ public class MenuRepository implements IMenuRepository {
         }
         return null;
 
+    }
+
+    @Override
+    public boolean delete(Integer integer) {
+        return false;
     }
 
     public boolean delete(int menuId) {

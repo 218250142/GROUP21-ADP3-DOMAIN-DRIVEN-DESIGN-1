@@ -33,6 +33,12 @@ public class ReserveLimitRepository implements IReserveLimitRepository{
             return null;
         return limit;
     }
+
+    @Override
+    public ReserveLimit read(Integer integer) {
+        return null;
+    }
+
     public ReserveLimit read(int totalLimit) {
         ReserveLimit limit = limitDB.stream()
                 .filter(e -> e.getTotalLimit()==(totalLimit))
@@ -51,6 +57,12 @@ public class ReserveLimitRepository implements IReserveLimitRepository{
         return null;
 
     }
+
+    @Override
+    public boolean delete(Integer integer) {
+        return false;
+    }
+
     public boolean delete(int menuId) {
         ReserveLimit limitToDelete=read(menuId);
         if(limitToDelete == null)
