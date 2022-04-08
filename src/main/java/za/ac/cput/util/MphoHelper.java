@@ -3,7 +3,6 @@ package za.ac.cput.util;
 Mpho Sefoloko
 218336322
 group 21
-March
  */
 import java.util.UUID;
 

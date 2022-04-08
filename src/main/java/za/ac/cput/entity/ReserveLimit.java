@@ -4,7 +4,6 @@ package za.ac.cput.entity;
 Mpho Sefoloko
 218336322
 group 21
-March
  */
 
 public class ReserveLimit {

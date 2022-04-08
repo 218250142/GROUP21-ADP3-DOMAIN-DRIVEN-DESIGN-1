@@ -3,7 +3,6 @@ package za.ac.cput.repository;
 Mpho Sefoloko
 218336322
 group 21
-March
  */
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
@@ -27,7 +26,7 @@ import static org.junit.jupiter.api.Assertions.*;
         }
 
         @Test
-        void c_update() {
+        void b_update() {
             ReserveLimit updated=new ReserveLimit.Builder().copy(limit).setTotalLimit(10)
                     .setAvailability(true)
                     .build();
@@ -36,7 +35,7 @@ import static org.junit.jupiter.api.Assertions.*;
         }
 
         @Test
-        void e_delete() {
+        void c_delete() {
             boolean success=repository.delete(limit.getTotalLimit());
             assertTrue(success);
             System.out.println("Deleted: " +success);
